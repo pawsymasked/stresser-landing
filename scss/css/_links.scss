@@ -1,0 +1,15 @@
+a {
+	text-decoration: none;
+
+	&:hover {
+		color: var(--color_primany_001);
+	}
+	&.card-hover {
+		color: currentColor;
+		transition: all 200ms ease;
+		cursor: pointer;
+		&:hover {
+			transform: translateY(-3px);
+		}
+	}
+}

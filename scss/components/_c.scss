@@ -1,0 +1,50 @@
+.c42191,
+.c42190 {
+	background-image: url(/assets/images/header-rectangle.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.c29327 {
+	position: absolute;
+	left: -100px;
+	top: -34px;
+}
+
+.c43419 {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 5px;
+
+	&.--red span {
+		color: #F9A9A9;
+	}
+	&.--green span {
+		color:#A9F9C4;
+	}
+
+	span {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		padding: 0px 5px;
+		gap: 10px;
+
+		background: #494949;
+		border-radius: 2px;
+	}
+}
+
+.c1337 {
+	width: 225px;
+	height: 12px;
+
+	background: linear-gradient(90deg, #A9F9C4 0%, rgba(169, 249, 196, 0.21) 100%);
+	border-radius: 3px;
+
+	&.--red {
+		background: linear-gradient(90deg, #F9A9A9 0%, rgba(249, 169, 169, 0.21) 100%);
+	}
+}

@@ -1,0 +1,98 @@
+@keyframes rotate-gift {
+	0% {
+		transform: rotate(0);
+	}
+
+	25% {
+		transform: rotate(-10deg);
+	}
+
+	50% {
+		transform: rotate(10deg);
+	}
+
+	75% {
+		transform: rotate(-6deg);
+	}
+
+	100% {
+		transform: rotate(0);
+	}
+}
+
+.gift {
+	animation-name: rotate-gift;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	display: inline-block;
+}
+
+.ease {
+	transition: all 200ms ease;
+}
+
+.show-up {
+	animation-name: show-up;
+	animation-duration: 1s;
+	transition: all 200ms ease;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+
+@keyframes show-up {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.show-up:nth-child(1) {
+	animation-delay: 0.5s;
+}
+.show-up:nth-child(2) {
+	animation-delay: 1s;
+}
+.show-up:nth-child(3) {
+	animation-delay: 1.5s;
+}
+.show-up:nth-child(4) {
+	animation-delay: 2s;
+}
+.show-up:nth-child(5) {
+	animation-delay: 2.5s;
+}
+.show-up:nth-child(6) {
+	animation-delay: 3s;
+}
+.show-up:nth-child(7) {
+	animation-delay: 3.5s;
+}
+.show-up:nth-child(8) {
+	animation-delay: 4s;
+}
+.show-up:nth-child(9) {
+	animation-delay: 4.5s;
+}
+.show-up:nth-child(10) {
+	animation-delay: 5s;
+}
+.show-up:nth-child(11) {
+	animation-delay: 5.5s;
+}
+.show-up:nth-child(12) {
+	animation-delay: 6.5s;
+}
+.show-up:nth-child(13) {
+	animation-delay: 7s;
+}
+.show-up:nth-child(14) {
+	animation-delay: 7.5s;
+}
+.show-up:nth-child(15) {
+	animation-delay: 8s;
+}
