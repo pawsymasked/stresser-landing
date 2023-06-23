@@ -1,0 +1,50 @@
+// Отображение только на мобильных
+@media (min-width: $breakpoint-mobile) {
+	.breakpoint-mobile {
+		display: none !important;
+	}
+}
+
+// Отображение только на планшетах
+@media (min-width: $breakpoint-tablet) {
+	.breakpoint-tablet {
+		display: none !important;
+	}
+}
+
+// Отображение с мобильных и ниже
+@media (max-width: $breakpoint-mobile) {
+	.from-breakpoint-mobile {
+		display: none !important;
+	}
+}
+
+// Отображение с планшетов и ниже
+@media (max-width: $breakpoint-tablet) {
+	.from-breakpoint-tablet {
+		display: none !important;
+	}
+	
+	.bp-47171 {
+		justify-content: center;
+		text-align: center;
+	}
+	.bp-2108 {
+		&.h-1px {
+			height: auto;
+		}
+		&.jc-end {
+			justify-content: unset;
+		}
+	}
+}
+
+// Отображение только на пк
+@media (max-width: $breakpoint-tablet) {
+	.breakpoint-pc {
+		display: none !important;
+	}
+	.cropOnMobile {
+		overflow: hidden;
+	}
+}

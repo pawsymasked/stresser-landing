@@ -1976,6 +1976,44 @@ a.card-hover:hover {
 	z-index: 5000;
 }
 
+@media (min-width: 800px) {
+	.breakpoint-mobile {
+		display: none !important;
+	}
+}
+@media (min-width: 1100px) {
+	.breakpoint-tablet {
+		display: none !important;
+	}
+}
+@media (max-width: 800px) {
+	.from-breakpoint-mobile {
+		display: none !important;
+	}
+}
+@media (max-width: 1100px) {
+	.from-breakpoint-tablet {
+		display: none !important;
+	}
+	.bp-47171 {
+		justify-content: center;
+		text-align: center;
+	}
+	.bp-2108.h-1px {
+		height: auto;
+	}
+	.bp-2108.jc-end {
+		justify-content: unset;
+	}
+}
+@media (max-width: 1100px) {
+	.breakpoint-pc {
+		display: none !important;
+	}
+	.cropOnMobile {
+		overflow: hidden;
+	}
+}
 @keyframes rotate-gift {
 	0% {
 		transform: rotate(0);
@@ -2216,6 +2254,10 @@ a.card-hover:hover {
 
 table {
 	width: 100%;
+}
+table tbody {
+	display: table;
+	width: inherit;
 }
 table th, table td {
 	text-align: left;

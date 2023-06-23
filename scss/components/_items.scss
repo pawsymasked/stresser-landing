@@ -12,9 +12,15 @@
 	}
 }
 
+
+
 table {
 	width: 100%;
-
+	
+	tbody {
+		display: table;
+		width: inherit;
+	}
 	th, td {
 		text-align: left;
 		padding: 10px;
