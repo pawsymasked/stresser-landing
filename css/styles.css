@@ -2252,6 +2252,44 @@ a.card-hover:hover {
 	flex: 1 1 256px;
 }
 
+.respone-cards-500px {
+	flex-wrap: wrap;
+}
+.respone-cards-500px > div, .respone-cards-500px > a {
+	flex: 1 1 500px;
+}
+
+.bottombar-custom {
+	position: fixed;
+	top: unset;
+	bottom: 0px;
+	left: 0px;
+	z-index: 666;
+	max-width: calc(100% - 20px);
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 20px;
+	border-radius: 12px;
+	margin: 10px;
+	transition: opacity 100ms linear, transform 100ms linear, visibility 100ms linear;
+	max-height: calc(100vh - 100px);
+	height: auto;
+	overflow-y: auto;
+}
+.bottombar-custom a, .bottombar-custom button {
+	margin-top: 10px;
+	width: 100%;
+	min-height: 35px;
+}
+.bottombar-custom a {
+	border-bottom: 1px solid var(--color_primany_002);
+}
+.bottombar-custom:not([bottomBarActive]) {
+	visibility: hidden;
+	opacity: 0%;
+	transform: scale(1) translate(-50%, 10px);
+}
+
 table {
 	width: 100%;
 }

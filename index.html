@@ -9,7 +9,7 @@
 
 	<link href="/css/styles.css" rel="stylesheet">
 	<script src="/javascript/jquery.js" type="text/javascript"></script>
-	<script src="/javascript/scripts.js" type="text/javascript" defer async="false"></script>
+	<script src="/javascript/scripts.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -38,10 +38,18 @@
 				<a href="" class="flex dir-row ai-center padd-rl-20px padd-tb-5px gap-15px col-bg-008 radius-20px">
 					<span class="small-10px medium">Try our new methods <span class="gift">🎁</span></span>
 				</a>
-				<button class="curcle">Menu</button>
+				<button data-bottombar="_mobileMenu" class="curcle">Menu</button>
 			</div>
 		</div>
 	</header>
+
+	<div class="bottombar-custom flex dir-column gap-5px col-bg-004 col-003 bor-1px-col005" data-for="_mobileMenu" bottomBarActive="true">
+		<a href="#" class="bolt">Features</a>
+		<a href="#" class="bolt">Plans</a>
+		<a href="#" class="bolt">Methods</a>
+		<a href="#" class="bolt">FAQ</a>
+		<button class="curcle">Sign Up</button>
+	</div>
 
 	<div class="absolute top-0px left-0px flex dir-column ai-center padd-rl-15px gap-10px">
 		<div class="flex dir-row jc-spabet ai-center max-w-1248px relative z-1">
@@ -376,51 +384,52 @@
 	<div class="flex dir-column ai-center padd-t-200px padd-rl-15px gap-10px">
 		<div class="flex dir-column ai-center gap-30px max-w-1248px">
 			<h1 class="bolt ta-center">FAQ</h1>
-			<div class="flex scroll-X">
-				<div class="flex dir-row ai-start gap-10px w-max">
-					<!-- What payment methods do you accept? -->
-					<div class="flex dir-column ai-start max-w-500px padd-20px gap-20px radius-16px bor-1px-col005 col-bg-004">
-						<div class="flex ai-center gap-20px">
-							<div class="flex size-50px ai-center jc-center radius-6px col-bg-016">
-								<img src="/assets/icons/hohol-icon.svg" alt="">
+				<div class="flex dir-column gap-10px">
+					<div class="respone-cards-256px flex dir-row ai-stretch gap-10px wrap">
+						<!-- What payment methods do you accept? -->
+						<a class="card-hover flex dir-column ai-start padd-20px gap-20px radius-16px bor-1px-col005 col-bg-004">
+							<div class="flex ai-center gap-20px">
+								<div class="flex size-50px ai-center jc-center radius-6px col-bg-016">
+									<img src="/assets/icons/hohol-icon.svg" alt="">
+								</div>
+								<h5>What payment methods do you accept?</h5>
 							</div>
-							<h5>What payment methods do you accept?</h5>
-						</div>
-						<p>We do only accept cryptocurrencies, and no such option as PayPal provided. However, you can exchange your PayPal balance to crypto with a variety of options available on the web. Cryptocurrencies we currently support: Bitcoin(BTC) | Ethereum(ETH) | Litecoin(LTC) | Monero(XMR) | USDTether(USDT)</p>
-						<button class="green-arr">Read More</button>
-					</div>
-					<!-- Do you keep logs? -->
-					<div class="flex dir-column ai-start max-w-500px padd-20px gap-20px radius-16px bor-1px-col005 col-bg-004">
-						<div class="flex ai-center gap-20px">
-							<div class="flex size-50px ai-center jc-center radius-6px col-bg-016">
-								<img src="/assets/icons/list-icon.svg" alt="">
+							<p>We do only accept cryptocurrencies, and no such option as PayPal provided. However, you can exchange your PayPal balance to crypto with a variety of options available on the web. Cryptocurrencies we currently support: Bitcoin(BTC) | Ethereum(ETH) | Litecoin(LTC) | Monero(XMR) | USDTether(USDT)</p>
+							<button class="green-arr">Read More</button>
+						</a>
+						<!-- Do you keep logs? -->
+						<a class="card-hover flex dir-column ai-start padd-20px gap-20px radius-16px bor-1px-col005 col-bg-004">
+							<div class="flex ai-center gap-20px">
+								<div class="flex size-50px ai-center jc-center radius-6px col-bg-016">
+									<img src="/assets/icons/list-icon.svg" alt="">
+								</div>
+								<h5>Do you keep logs?</h5>
 							</div>
-							<h5>Do you keep logs?</h5>
-						</div>
-						<p>We prioritize your privacy and have implemented strict measures to safeguard your data. As part of our commitment to maintaining the confidentiality of our users, we do not keep any logs. This means that we do not retain any information or records of your activities, including IP addresses.</p>
-						<button class="green-arr">Read More</button>
-					</div>
-					<!-- Why Stresser.com? -->
-					<div class="flex dir-column ai-start max-w-500px padd-20px gap-20px radius-16px bor-1px-col005 col-bg-004">
-						<div class="flex ai-center gap-20px">
-							<div class="flex size-50px ai-center jc-center radius-6px col-bg-016">
-								<img src="/assets/icons/cloud-icon.svg" alt="">
+							<p>We prioritize your privacy and have implemented strict measures to safeguard your data. As part of our commitment to maintaining the confidentiality of our users, we do not keep any logs. This means that we do not retain any information or records of your activities, including IP addresses.</p>
+							<button class="green-arr">Read More</button>
+						</a>
+						<!-- Why Stresser.com? -->
+						<a class="card-hover flex dir-column ai-start padd-20px gap-20px radius-16px bor-1px-col005 col-bg-004">
+							<div class="flex ai-center gap-20px">
+								<div class="flex size-50px ai-center jc-center radius-6px col-bg-016">
+									<img src="/assets/icons/cloud-icon.svg" alt="">
+								</div>
+								<h5>Why Stresser.com?</h5>
 							</div>
-							<h5>Why Stresser.com?</h5>
-						</div>
-						<p>We pride ourselves on delivering exceptional speeds when conducting stress tests. Our optimized infrastructure and advanced technologies enable rapid and efficient testing, saving you valuable time and providing accurate results promptly.</p>
-						<button class="green-arr">Read More</button>
+							<p>We pride ourselves on delivering exceptional speeds when conducting stress tests. Our optimized infrastructure and advanced technologies enable rapid and efficient testing, saving you valuable time and providing accurate results promptly.</p>
+							<button class="green-arr">Read More</button>
+						</a>
 					</div>
+					<!-- Read from Stresser.com update log -->
+					<a class="card-hover flex jc-spabet ai-start radius-16px bor-1px-col005 col-bg-004 wrap max-w-100 crop">
+						<div class="flex padd-25px dir-column ai-start gap-20px max-w-320px">
+							<h5>Read from Stresser.com update log</h5>
+							<p>Stay up-to-date with the latest developments and improvements at Stresser.com by regularly checking our update log.</p>
+							<button class="green-arr">Read More</button>
+						</div>
+						<img src="/assets/images/usa-rokets.png" height="193px" alt="">
+					</a>
 				</div>
-			</div>
-			<!-- Read from Stresser.com update log -->
-			<div class="flex ai-start radius-16px bor-1px-col005 col-bg-004 wrap w-fit max-w-100 crop">
-				<div class="flex padd-25px dir-column ai-start gap-20px max-w-320px">
-					<h5>Read from Stresser.com update log</h5>
-					<p>Stay up-to-date with the latest developments and improvements at Stresser.com by regularly checking our update log.</p>
-					<button class="green-arr">Read More</button>
-				</div>
-				<img src="/assets/images/usa-rokets.png" height="193px" alt="">
 			</div>
 		</div>
 	</div>
