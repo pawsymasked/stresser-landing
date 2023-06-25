@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=0.94, maximum-scale=0.94, user-scalable=0" />
+	<link rel="icon" type="image/x-icon" href="/assets/uploads/favicon/favicon.svg" />
+
+	<link href="/css/styles.css" rel="stylesheet">
+	<script src="/javascript/jquery.js" type="text/javascript"></script>
+	<script src="/javascript/scripts.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- App container -->
+	<div class="flex dir-row">
+
+		<!-- Menu -->
+		<div class="whtd-collaps-sidemenu flex dir-column max-w-320px padd-rl-15px padd-10px jc-spabet ai-center col-bg-002 h-100v relative">
+			<div class="flex ai-center jc-center padd-t-45px">
+				<img src="/assets/icons/big-cloud-icon.svg" alt="">
+			</div>
+			<div class="flex dir-column ai-start gap-5px ds-buttons">
+				<!-- Dashboard -->
+				<button data-page-class="i" href-page-ds="dashboard">
+					<img src="/assets/icons/dashboard/dashboard.svg" alt="">
+					<span>Dashboard</span>
+				</button>
+				<!-- Attack Hub -->
+				<button data-page-class="i" href-page-ds="attackhub">
+					<img src="/assets/icons/dashboard/attackhub.svg" alt="">
+					<span>Attack Hub</span>
+				</button>
+				<!-- Purchase -->
+				<button data-page-class="i" href-page-ds="purchase">
+					<img src="/assets/icons/dashboard/purchase.svg" alt="">
+					<span>Purchase</span>
+				</button>
+				<!-- Helpdesk -->
+				<button data-page-class="i" href-page-ds="helpdesk">
+					<img src="/assets/icons/dashboard/helpdesk.svg" alt="">
+					<span>Helpdesk</span>
+				</button>
+				<!-- API Manager -->
+				<button data-page-class="i" href-page-ds="apimanager">
+					<img src="/assets/icons/dashboard/api.svg" alt="">
+					<span>API Manager</span>
+				</button>
+				<!-- Settings -->
+				<button data-page-class="i" href-page-ds="settings">
+					<img src="/assets/icons/dashboard/settings.svg" alt="">
+					<span>Settings</span>
+				</button>
+			</div>
+			<!-- User -->
+			<div class="min-h-65px flex padd-rl-20px padd-tb-10px jc-spabet ai-center radius-9px col-bg-010">
+				<div class="flex ai-center gap-10px w-fit">
+					<img src="/assets/images/profile/gatto.png" height="32px" class="radius-circle" alt="">
+					<div class="flex dir-column ai-start from-breakpoint-whtd">
+						<p class="small-10px">User</p>
+						<p class="bolt-semi">Gatto</p>
+					</div>
+				</div>
+				<img class="from-breakpoint-whtd" src="/assets/icons/small-arrow.svg" alt="">
+			</div>
+		</div>
+
+		<!-- Pages -->
+		<div class="flex dir-column padd-rl-15px ai-center max-h-100v! scroll-Y">
+
+			<!-- Settings -->
+			<section page data-page-ds="settings" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<h1 class="padd-25px bolt">Settings</h1>
+				<div class="bp-4728 dir-row flex ai-start gap-10px">
+					<!-- Форма -->
+					<div class="max-w-450px flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002">
+						<h4 class="bolt-semi">Change Password</h4>
+						<form name="cpform" class="flex dir-column ai-start gap-10px">
+							<input type="password" name="c-password" placeholder="Current password" class="w-100 input-dark">
+							<input type="password" name="n-password" placeholder="New password" class="w-100 input-dark">
+							<input type="password" name="r-password" placeholder="Repeat password" class="w-100 input-dark">
+							<button type="submit" class="w-100 big-green">Change Password</button>
+						</form>
+					</div>
+					<!-- Детали -->
+					<div class="flex dir-column padd-15px ai-start radius-12px col-bg-002">
+						<table class="flex max-w-100 scroll-X compact">
+							<tr class="table-header-painted">
+								<th>Plan</th>
+								<th>Price</th>
+								<th>Date</th>
+								<th>Status</th>
+							</tr>
+							<tr><td></td></tr>	<!-- Free space -->
+							<tr>
+								<td>Saturn</td>
+								<td>$120</td>
+								<td>17.02.2022</td>
+								<td>Unactive</td>
+							</tr>
+							<tr>
+								<td>Earth</td>
+								<td>$120</td>
+								<td>17.02.2022</td>
+								<td>Unactive</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<!-- API Manager -->
+			<section page data-page-ds="apimanager" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<h1 class="padd-25px bolt">API Manager</h1>
+				<div class="flex dir-column gap-10px">
+					<div class="flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002">
+						<h4 class="bolt-semi">Your API Key</h4>
+						<div class="flex relative ds-buttons ds-mini">
+							<input placeholder="$2a$10$LLWutMvIziXMlLCEQzCvwuabe.5P6iXckg7AKzQFtcIx7f2UfQBtm" type="text" class="input-dark w-100">
+							<button class="absolute right-0px">Update API Key</button>
+						</div>
+					</div>
+					<div class="flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002">
+						<h4 class="bolt-semi">Documentation</h4>
+						<div class="flex ds-buttons ds-mini respone-cards gap-10px">
+							<!-- i -->
+							<div class="flex dir-column gap-10px min-h-200px col-bg-002 bor-1px-col008 radius-6px relative padd-20px ">
+								<div class="c22997">
+									<p>What is an API?</p>
+									<chip></chip>
+									<p>What is an API?</p>
+								</div>
+								<p class="col-003">This is where we can brag more than others. Our browser methods spoof system information, randomize fingerprints, and change the operating systems in the browser. 
+	
+								All requests are legitimate, we don't use security loopholes (like our competitors), our flooding is completely identical to users.</p>
+							</div>
+							<!-- i -->
+							<div class="flex dir-column gap-10px min-h-200px col-bg-002 bor-1px-col008 radius-6px relative padd-20px ">
+								<div class="c22997">
+									<p>Examples</p>
+									<chip></chip>
+									<p>Examples</p>
+								</div>
+								<p class="col-003">We have created examples using different languages, with fully working code that you can use in your projects.</p>
+								<div class="flex gap-5px">
+									<button class="col-bg-010">TypeScript</button>
+									<button class="col-bg-010">Golang</button>
+								</div>
+							</div>
+							<!-- i -->
+							<div class="flex dir-column gap-10px min-h-200px col-bg-002 bor-1px-col008 radius-6px relative padd-20px ">
+								<div class="c22997">
+									<p>Response validation</p>
+									<chip></chip>
+									<p>Response validation</p>
+								</div>
+								<p class="col-003">If there is something wrong, we will respond you with:</p>
+								<code>{ success: false, message: "problem description" }</code>
+								<p class="col-003">If there is something wrong, we will respond you with:</p>
+								<code>{ success: true, ... }</code>
+							</div>
+							<!-- i -->
+							<div class="flex dir-column gap-10px min-h-200px col-bg-002 bor-1px-col008 radius-6px relative padd-20px ">
+								<p class="bolt-semi">Current Plan</p>
+								<div class="flex padd-15px ai-center jc-center radius-9px col-bg-009">
+									<h1 class="bolt col-008">Free</h1>
+								</div>
+								<button class="col-bg-010 min-w-100"><p class="w-100">Upgrade</p></button>
+							</div>
+							
+						</div>
+					</div>
+			</section>
+
+			<!-- Helpdesk -->
+			<section page data-page-ds="helpdesk" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<h1 class="padd-25px bolt">Helpdesk</h1>
+				<div class="bp-4728 dir-row flex ai-start gap-20px">
+					<div class="respone-cards-175px w-100 flex gap-10px wrap">
+						<!-- i -->
+						<div class="flex dir-column gap-10px min-h-200px col-bg-002 bor-1px-col008 radius-6px relative padd-20px ">
+							<p class="bolt-semi">Security & Privacy</p>
+							<p class="col-003">We are one of the most confidential stress-testing services. We do not log attacks or IP addresses. 
+
+							When you register, we do not ask for any information other than your Login and Password. You can read our information collection policy in our Privacy Policy.</p>
+						</div>
+						<!-- i -->
+						<div class="flex dir-column gap-10px min-h-200px col-bg-002 bor-1px-col008 radius-6px relative padd-20px ">
+							<p class="bolt-semi">Payments</p>
+							<p class="col-003">Our subscription payment system is automated, exclusively (!) in cryptocurrency. 
+
+							We do not accept any other payment methods, as they are not secure. After payment you will receive balance in 20-30 minutes, depending on currency.</p>
+						</div>
+						<!-- i -->
+						<div class="flex dir-column gap-10px min-h-200px col-bg-002 bor-1px-col008 radius-6px relative padd-20px ">
+							<p class="bolt-semi">Methods</p>
+							<p class="col-003">This is where we can brag more than others. Our browser methods spoof system information, randomize fingerprints, and change the operating systems in the browser. 
+
+							All requests are legitimate, we don't use security loopholes (like our competitors), our flooding is completely identical to users.</p>
+						</div>
+						<!-- i -->
+						<div class="flex dir-column gap-10px min-h-200px col-bg-002 bor-1px-col008 radius-6px relative padd-20px ">
+							<p class="bolt-semi">Power</p>
+							<p class="col-003">Venta uses 155 proxies per attack, which means at a ratelimit of 64 to 10,000 requests per second. 
+
+							Ariel uses all proxies allocated to the method per attack, the approximate number of proxies at the moment - 3000. With a ratelimit of 32 = 90,000 requests per second.</p>
+						</div>
+					</div>
+					<div class="flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002">
+						<h4 class="bolt-semi">All Methods List & Description</h4>
+						<table class="flex max-w-100 green-dark">
+							<tr>
+								<th>Name</th>
+								<th>Type</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>STORM-CONNECT</td>
+								<td>L7</td>
+								<td>Method is useful against regular webservers/low protected targets with large backend</td>
+							</tr>
+							<tr>
+								<td>Rosetta</td>
+								<td>L7</td>
+								<td>Unique extremely stable and adaptive method with advanced attack settings with aim to bypass strong ratelimits. Attack usually takes effect in 1 minute and reaches maximum power in 3-5 minutes.</td>
+							</tr>
+							<tr>
+								<td>DNS</td>
+								<td>L4</td>
+								<td>Method based on Domain Name System, has biggest amplification power. Recommended for home connection, unprotected servers.</td>
+							</tr>
+							<tr>
+								<td>ARD</td>
+								<td>L4</td>
+								<td>UDP based Amplification. Can bypass Anti-DDos protection.</td>
+							</tr>
+							<tr>
+								<td>TCP-IMP</td>
+								<td>L4</td>
+								<td>Spoofed SYN packets flood, tweaked to bypass some protections.</td>
+							</tr>
+							<tr>
+								<td>FiveM</td>
+								<td>L4</td>
+								<td>Bypass method for GTA V servers that are using FiveM multiplayer modification framework.</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<!-- Purchase -->
+			<section page data-page-ds="purchase" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<h1 class="padd-25px bolt">Purchase</h1>
+				<div class="flex ai-start gap-10px">
+					<!-- Тарифы -->
+					<div class="flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002 scroll-X">
+						<div class="flex dir-row ai-stretch gap-30px">
+							<!-- CARD -->
+							<a href="" class="card-hover w-200px bor-1px-col008 radius-12px flex dir-column ai-start padd-rl-30px padd-tb-50px gap-50px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 class="medium">Basic</h4>
+									<h5 class="col-008">$100</h5>
+									<h5 class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+										</div>
+									</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex dir-column ai-center gap-10px">
+									<button class="curcle green">Purchase</button>
+								</div>
+							</a>
+							<!-- CARD -->
+							<a href="" class="card-hover w-200px bor-1px-col008 radius-12px flex dir-column ai-start padd-rl-30px padd-tb-50px gap-50px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 class="medium">Normal</h4>
+									<h5 class="col-008">$200</h5>
+									<h5 class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+										</div>
+									</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex dir-column ai-center gap-10px">
+									<button class="curcle green">Purchase</button>
+								</div>
+							</a>
+							<!-- CARD -->
+							<a href="" class="card-hover w-200px bor-1px-col008 radius-12px flex dir-column ai-start padd-rl-30px padd-tb-50px gap-50px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 class="medium">Medium</h4>
+									<h5 class="col-008">$500</h5>
+									<h5 class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+										</div>
+									</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex dir-column ai-center gap-10px">
+									<button class="curcle green">Purchase</button>
+								</div>
+							</a>
+							<!-- CARD -->
+							<a href="" class="card-hover w-200px bor-1px-col008 radius-12px flex dir-column ai-start padd-rl-30px padd-tb-50px gap-50px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 class="medium">Premium</h4>
+									<h5 class="col-008">$1000</h5>
+									<h5 class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+										</div>
+									</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex dir-column ai-center gap-10px">
+									<button class="curcle green">Purchase</button>
+								</div>
+							</a>
+							<!-- CARD -->
+							<a href="" class="card-hover w-200px bor-1px-col008 radius-12px flex dir-column ai-start padd-rl-30px padd-tb-50px gap-50px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 class="medium">Enterprise</h4>
+									<h5 class="col-008">$2000</h5>
+									<h5 class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+										</div>
+									</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex dir-column ai-center gap-10px">
+									<button class="curcle green">Purchase</button>
+								</div>
+							</a>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Attack Hub -->
+			<section page data-page-ds="attackhub" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<h1 class="padd-25px bolt">Attack Hub</h1>
+				<div class="bp-4728 dir-row flex ai-start gap-10px">
+					<!-- Форма -->
+					<div class="max-w-450px flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002">
+						<div class="flex ai-start gap-5px ds-buttons ds-mini">
+							<button class="col-bg-010">Free</button>
+							<button class="col-bg-010">Layer 3</button>
+							<!-- "i" - Активный элемент -->
+							<button class="col-bg-010 i">Layer 7</button>
+						</div>
+						<form name="ahform" class="flex dir-column ai-start gap-20px">
+							<div class="flex dir-column gap-10px">
+								<h4 class="bolt-semi">Target</h4>
+								<input type="email" name="email" placeholder="https://example.com" class="w-100 input-dark">
+							</div>
+							<div class="flex gap-10px">
+								<div class="flex dir-column gap-10px">
+									<h4 class="bolt-semi">Duration</h4>
+									<input type="number" name="duration" placeholder="Min: 15, Max: 3000 sec" class="w-100 input-dark">
+								</div>
+								<div class="flex dir-column gap-10px">
+									<h4 class="bolt-semi">Concurrent</h4>
+									<input type="text" name="concurrent" placeholder="Concurrent" class="w-100 input-dark">
+								</div>
+							</div>
+							<div class="flex gap-10px">
+								<div class="flex dir-column gap-10px">
+									<h4 class="bolt-semi">Method</h4>
+									<input type="text" name="method" placeholder="Select Method" class="w-100 input-dark">
+								</div>
+								<div class="flex dir-column gap-10px">
+									<h4 class="bolt-semi">Request Method</h4>
+									<input type="text" name="request" placeholder="GET" class="w-100 input-dark">
+								</div>
+							</div>
+							<button type="submit" class="w-100 big-green">Send Attack</button>
+						</form>
+					</div>
+					<!-- Детали -->
+					<div class="flex dir-column padd-15px ai-start radius-12px col-bg-002">
+						<table class="flex max-w-100 scroll-X compact">
+							<tr class="table-header-painted">
+								<th>Target</th>
+								<th>Duration</th>
+								<th>Method</th>
+								<th>Time</th>
+								<th></th>
+							</tr>
+							<tr><td></td></tr>	<!-- Free space -->
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button	on class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>https://example.com/</td>
+								<td>120</td>
+								<td>HTTP-Storm</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							
+						</table>
+						<div class="flex ai-center jc-spabet">
+							<button	on class="small-gray">Stop All</button>
+							<div class="w-fit flex gap-5px">
+								<button class="num-sel i">1</button>
+								<button class="num-sel">2</button>
+								<button class="num-sel">3</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Dashboard -->
+			<section page data-page-ds="dashboard" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<!-- Big card -->
+				<div class="flex jc-spabet ai-start radius-16px bor-1px-col005 col-bg-004 wrap max-w-100 crop">
+					<div class="flex padd-25px dir-column ai-start gap-20px max-w-320px">
+						<h1 class="bolt">Dashboard</h1>
+						<p>Good evening,<br><span class="h2 bolt">Gatto</span></p>
+					</div>
+					<img src="/assets/images/usa-rokets.png" height="193px" alt="">
+				</div>
+
+				<!-- Info cards -->
+				<div class="flex bp-4728 dir-row ai-start gap-10px">
+					<!-- Detail panel -->
+					<div class="flex dir-column ai-start gap-10px">
+						<!-- Last updates -->
+						<div class="flex dir-column padd-tb-15px padd-rl-25px ai-start gap-20px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Last updates</h4>
+							<div class="flex dir-column ai-start">
+								<!-- 2023-05-15 -->
+								<a href="#" class="latest-update-item" style="--ccd: #A9F9C4">
+									<div class="content">
+										<div class="title">
+											<p>[Date: 2023-05-15]</p>
+											<chip></chip>
+											<p>Improved DDoS mitigation</p>
+										</div>
+										<p>Upgraded algorithms and infrastructure for enhanced protection against DDoS attacks, ensuring greater stability and availability of networks and servers.</p>
+									</div>
+								</a>
+								<!-- 2023-05-18 -->
+								<a href="#" class="latest-update-item" style="--ccd: #F7F9A9">
+									<div class="content">
+										<div class="title">
+											<p>[Date: 2023-05-18]</p>
+											<chip></chip>
+											<p>New stress testing methods</p>
+										</div>
+										<p>Introduced additional stress testing methods to simulate a wider range of scenarios, enabling more comprehensive assessments of system resilience and performance.</p>
+									</div>
+								</a>
+								<!-- 2023-05-23 -->
+								<a href="#" class="latest-update-item" style="--ccd: #C3A9F9">
+									<div class="content">
+										<div class="title">
+											<p>[Date: 2023-05-23]</p>
+											<chip></chip>
+											<p>Performance optimizations</p>
+										</div>
+										<p>Fine-tuned infrastructure to optimize stress testing performance, resulting in faster test initiation and more responsive results for quicker and more accurate evaluations.</p>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- Current server load -->
+						<div class="flex dir-column padd-tb-15px padd-rl-25px ai-start gap-20px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Current server load</h4>
+							<div class="flex gap-5px dir-column ai-start">
+								<!-- #1 -->
+								<div class="flex dir-column ai-start padd-10px gap-10px col-bg-004 radius-6px">
+									<div class="c43419">
+										<p class="col-005">Server #1</p>
+										<span>23.1</span>
+									</div>
+									<div class="c1337 w-100"></div>
+								</div>
+								<!-- #2 -->
+								<div class="flex dir-column ai-start padd-10px gap-10px col-bg-004 radius-6px --red">
+									<div class="c43419">
+										<p class="col-005">Server #2</p>
+										<span>72.6</span>
+									</div>
+									<div class="c1337 w-100"></div>
+								</div>
+								<!-- #3 -->
+								<div class="flex dir-column ai-start padd-10px gap-10px col-bg-004 radius-6px">
+									<div class="c43419">
+										<p class="col-005">Server #3</p>
+										<span>23.1</span>
+									</div>
+									<div class="c1337 w-100"></div>
+								</div>
+								<!-- #4 -->
+								<div class="flex dir-column ai-start padd-10px gap-10px col-bg-004 radius-6px --red">
+									<div class="c43419">
+										<p class="col-005">Server #4</p>
+										<span>72.6</span>
+									</div>
+									<div class="c1337 w-100"></div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- Right panel -->
+					<div class="flex dir-column max-w-280px ai-start gap-10px">
+						<!-- Notification center -->
+						<div class="flex dir-column padd-tb-15px padd-rl-10px ai-start gap-10px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Notification center</h4>
+							<div class="flex dir-column ai-start gap-5px">
+								<a href="#" class="card-hover flex min-h-40px padd-10px ai-center gap-10px radius-6px col-bg-010">
+									<chip style="--ccd: #A9F9C4"></chip>
+									<p class="small-10px">Improved DDoS mitigation</p>
+								</a>
+								<a href="#" class="card-hover flex min-h-40px padd-10px ai-center gap-10px radius-6px col-bg-010">
+									<chip style="--ccd: #F7F9A9"></chip>
+									<p class="small-10px">New stress testing methods</p>
+								</a>
+							</div>
+						</div>
+						<!-- Total servers -->
+						<div class="flex dir-column padd-tb-15px padd-rl-10px ai-start gap-10px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Total servers</h4>
+							<div class="flex padd-15px ai-center jc-center radius-9px col-bg-009">
+								<h1 class="bolt col-008">7</h1>
+							</div>
+						</div>
+						<!-- Total tests -->
+						<div class="flex dir-column padd-tb-15px padd-rl-10px ai-start gap-10px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Total tests</h4>
+							<div class="flex padd-15px ai-center jc-center radius-9px col-bg-009">
+								<h1 class="bolt col-008">24.944</h1>
+							</div>
+						</div>
+						<!-- Current plan -->
+						<div class="flex dir-column padd-tb-15px padd-rl-10px ai-start gap-10px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Current plan</h4>
+							<div class="flex padd-15px ai-center jc-center radius-9px col-bg-009">
+								<h1 class="bolt col-008">Free</h1>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+			</section>
+
+		</div>
+	</div>
+</body>
+
+</html>

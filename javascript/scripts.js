@@ -5,7 +5,105 @@ document.addEventListener("DOMContentLoaded", function () {
 	updateMouseUpMenuBehavior();
 	updateGiftAnimation();
 	updateHeaderBehavior();
+
+	new URLMenuUpdater({
+		ds: "dashboard",
+	});
 });
+
+let URLMenus = [];
+// URLMenus["key-name"] => (Вернет текущее активное меню)
+
+class URLMenuUpdater {
+	constructor(attributes) {
+		this.attributes = attributes;
+		this.initialize();
+	}
+
+	initialize() {
+		this.updateURLParams();
+		this.initDefaultURLParams();
+		this.updateDisplay();
+		this.addClickHandlers();
+	}
+
+	updateURLParams() {
+		var pathname = window.location.pathname.split("?")[0].split("/")[2] || "";
+		var params = new URLSearchParams(window.location.search);
+
+		for (var key in this.attributes) {
+			if (params[key]) {
+				this.attributes[key] = params[key];
+			}
+		}
+	}
+
+	initDefaultURLParams() {
+		// var buildURL = new URL(window.location.href);
+		// var urlParams = new URLSearchParams(window.location.search);
+		// for (var key in this.attributes) {
+		// 	var attrValue = $("body").attr("default-page-" + key);
+		// 	var paramValue = this.attributes[key];
+
+		// 	if (attrValue && !paramValue) {
+		// 		if (attrValue == "#top") {
+		// 			buildURL.searchParams.delete(key);
+		// 		} else {
+		// 			buildURL.searchParams.set(key, attrValue);
+		// 		}
+		// 	}
+		// }
+
+		// window.history.replaceState(null, null, buildURL);
+		var self = this;
+		var urlParams = new URLSearchParams(window.location.search);
+		
+		for (var key in this.attributes) {
+			var urlValue = urlParams.get(key);
+			if (urlValue) {
+				self.attributes[key] = urlValue;
+			}
+		}
+	}
+
+	addClickHandlers() {
+		var self = this; // Сохраняем доступ к контексту `this`
+		for (var key in this.attributes) {
+			$("[href-page-" + key + "]").on("click", function () {
+				var attrValue = $(this).attr("href-page-" + key);
+				// Используем сохраненный контекст
+				self.attributes[key] = attrValue;
+				self.updateDisplay();
+			});
+		}
+	}
+
+	updateDisplay() {
+		for (var key in this.attributes) {
+			var attrValue = this.attributes[key];
+
+			var hrefSelector = "[href-page-" + key + "]";
+			const hrefclass = $(hrefSelector).attr("data-page-class");
+			if (hrefclass) $(hrefSelector).removeClass(hrefclass);
+
+			// if (attrValue) {
+			$("[data-page-" + key + "]").each(function () {
+				var dataValue = $(this).attr("data-page-" + key);
+				var hrefSelector = "[href-page-" + key + "='" + dataValue + "']";
+
+				if (dataValue == attrValue) {
+					$(this).attr("active", true);
+					const hrefclass = $(hrefSelector).attr("data-page-class");
+					if (hrefclass) $(hrefSelector).addClass(hrefclass);
+				} else {
+					$(this).attr("active", null);
+				}
+			});
+			// }
+			URLMenus[key] = attrValue;
+		}
+	}
+}
 
 function updateHeaderBehavior() {
 	// Заполнение хедера

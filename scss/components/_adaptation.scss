@@ -17,6 +17,15 @@
 	.from-breakpoint-mobile {
 		display: none !important;
 	}
+
+	.bp-4728 {
+		&.dir-row {
+			flex-direction: column;
+		}
+		.max-w-280px, .max-w-450px {
+			max-width: unset;
+		}
+	}
 }
 
 // Отображение с планшетов и ниже
@@ -46,5 +55,33 @@
 	}
 	.cropOnMobile {
 		overflow: hidden;
+	}
+}
+
+// Отображение только на whtd
+@media (min-width: $breakpoint-whtd) {
+	.breakpoint-whtd {
+		display: none !important;
+	}
+}
+
+// Отображение с whtd и ниже
+@media (max-width: $breakpoint-whtd) {
+	.from-breakpoint-whtd {
+		display: none !important;
+	}
+	.whtd-collaps-sidemenu {
+		&.max-w-320px {
+			max-width: fit-content !important;
+		}
+		button {
+			justify-content: center;
+		}
+		span, p {
+			display: none !important;
+		}
+		img {
+			max-width: 32px;
+		}
 	}
 }

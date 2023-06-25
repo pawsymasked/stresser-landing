@@ -21,6 +21,7 @@
 .flex {
 	display: flex;
 	width: inherit;
+	max-width: 100%;
 	// By default, use sing-unset to disable
 	box-sizing: border-box;
 }
