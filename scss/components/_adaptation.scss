@@ -84,4 +84,35 @@
 			max-width: 32px;
 		}
 	}
+
+	@media (max-width: $breakpoint-mobile) {
+		.whtd-collaps-sidemenu.max-w-320px {
+			max-width: unset !important;
+		}
+		.bp-12960 {
+			&.max-h-100v\! {
+				max-height: unset;
+			}
+			margin-bottom: 100px;
+		}
+		.bp-40939 {
+			z-index: 666;
+			position: fixed;
+			bottom: 0;
+			justify-content: center;
+			&.max-w-320px {
+				max-width: unset;
+				width: 100vw;
+			}
+			div {
+				width: fit-content !important;
+			}
+			&.h-100v {
+				height: fit-content;
+			}
+			.dir-column, &.dir-column {
+				flex-direction: row;
+			}
+		}
+	}
 }

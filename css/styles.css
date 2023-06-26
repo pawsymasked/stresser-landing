@@ -2166,6 +2166,36 @@ a.card-hover:hover {
 		max-width: 32px;
 	}
 }
+@media (max-width: 1270px) and (max-width: 800px) {
+	.whtd-collaps-sidemenu.max-w-320px {
+		max-width: unset !important;
+	}
+	.bp-12960 {
+		margin-bottom: 100px;
+	}
+	.bp-12960.max-h-100v\! {
+		max-height: unset;
+	}
+	.bp-40939 {
+		z-index: 666;
+		position: fixed;
+		bottom: 0;
+		justify-content: center;
+	}
+	.bp-40939.max-w-320px {
+		max-width: unset;
+		width: 100vw;
+	}
+	.bp-40939 div {
+		width: fit-content !important;
+	}
+	.bp-40939.h-100v {
+		height: fit-content;
+	}
+	.bp-40939 .dir-column, .bp-40939.dir-column {
+		flex-direction: row;
+	}
+}
 .ani-fade-show, [page] {
 	animation: keyframes-fade-show 250ms ease;
 }
