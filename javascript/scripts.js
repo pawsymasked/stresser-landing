@@ -8,8 +8,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	new URLMenuUpdater({
 		ds: "dashboard",
+		admin: "home",
 	});
+
+	// spawnToast("Как использовать Тосты", "Смотрите пример в <b>scripts.js -> spawnToast(...)</b>", "", 10000);
+	// spawnToast("Success", "Attack has been sent", "success");
+	// spawnToast("Error", "Error has occurred", "error");
 });
+
+
+function spawnToast(title, message, type, timeout = 5000) {
+	const types = {
+		error: "#EB5757",
+		success: "#00CC99"
+	};
+
+	type = String(type).toLowerCase();
+	const color = types[type] || types[type.toLowerCase()] || "#0052CC";
+
+	var toast = $('<div>', {
+		'style': '--nb-i-col: ' + color,
+		'class': 'notify-item',
+		html: $('<div>', {
+			'class': 'ic',
+			html: $('<img>', {
+				src: type == "error" ? '/assets/icons/nb-error.svg' : '/assets/icons/nb-success.svg',
+				alt: ''
+			})
+		}).add($('<div>', {
+			'class': 'flex dir-column',
+			html: $('<p>', {
+				text: title
+			}).add('<p>', {
+				class: 'small-10px',
+				html: message
+			})
+		}))
+	});
+	  
+
+	var toastBar = $(".notify-bar");
+	toastBar.append(toast);
+
+	setTimeout(function() {
+		toast.addClass("hide");
+
+		setTimeout(function() {
+			toast.remove();
+		}, 100);
+	}, timeout);
+}
 
 let URLMenus = [];
 // URLMenus["key-name"] => (Вернет текущее активное меню)

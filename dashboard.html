@@ -68,7 +68,72 @@
 		</div>
 
 		<!-- Pages -->
-		<div class="bp-12960 flex dir-column padd-rl-15px ai-center max-h-100v! scroll-Y">
+		<div class="relative bp-12960 flex dir-column padd-rl-15px ai-center max-h-100v! scroll-Y">
+
+			<!-- Notifys -->
+			<div class="notify-bar"></div>
+
+			<!-- Buy -->
+			<section page data-page-ds="buy" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<div class="flex jc-end">
+					<button>
+						<img src="/assets/icons/close.svg" alt="">
+					</button>
+				</div>
+				<div class="flex bp-4728 dir-row gap-10px">
+					<div class="flex dir-column ai-start gap-15px padd-20px col-bg-004 radius-12px bor-1px-col008">
+						<div class="flex dir-row gap-5px ai-center">
+							<h1 class="bolt">Purchase</h1>
+							<div class="flex padd-rl-5px bor-1px-col008 w-fit">
+								<p class="col-005">#819381</p>
+							</div>
+						</div>
+						<div class="flex bp-4728 dir-row gap-10px">
+							<form id="purchasebuy" class="flex dir-column gap-10px">
+								<div class="flex dir-column gap-10px">
+									<h4 class="bolt-semi">Crypto</h4>
+									<input type="text" name="crypto" placeholder="BTC" class="w-100 input-dark">
+								</div>
+								<div class="flex dir-column gap-10px">
+									<h4 class="bolt-semi">Address</h4>
+									<input type="text" name="address" placeholder="19PplXnALwrpKmwbuwqrfjBZCb6YPsfKur" class="w-100 input-dark">
+								</div>
+								<div class="flex dir-column gap-10px">
+									<h4 class="bolt-semi">Amount</h4>
+									<input type="text" name="amount" placeholder="0.0031" class="w-100 input-dark">
+								</div>
+								<div class="flex dir-column gap-10px">
+									<h4 class="bolt-semi">Expired</h4>
+									<input type="text" name="expired" placeholder="2023-06-05 22:01:28" class="w-100 input-dark">
+								</div>
+								<button type="submit" class="w-100 big-green">Check Payment</button>
+							</form>
+							<div class="flex ai-center h-fit c42821 w-fit jc-center"><img src="/assets/images/qr-placeholder.png" height="128px" alt=""></div>
+						</div>
+					</div>
+
+					<div class="flex dir-column max-w-320px col-001 ai-start gap-15px padd-20px col-bg-004 radius-12px bor-1px-col008">
+						<details>
+							<summary>Where to buy BTC</summary>
+							<div class="details-expanded">
+								<p>test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test </p>
+							</div>
+						</details>
+						<details>
+							<summary>How long to wait</summary>
+							<div class="details-expanded">
+								<p>test</p>
+							</div>
+						</details>
+						<details>
+							<summary>Support</summary>
+							<div class="details-expanded">
+								<p>test</p>
+							</div>
+						</details>
+					</div>
+				</div>
+			</section>
 
 			<!-- Settings -->
 			<section page data-page-ds="settings" class="flex dir-column gap-10px max-w-980px padd-tb-40px">

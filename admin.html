@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=0.94, maximum-scale=0.94, user-scalable=0" />
+	<link rel="icon" type="image/x-icon" href="/assets/uploads/favicon/favicon.svg" />
+
+	<link href="/css/styles.css" rel="stylesheet">
+	<script src="/javascript/jquery.js" type="text/javascript"></script>
+	<script src="/javascript/scripts.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- App container -->
+	<div class="flex dir-row">
+
+		<!-- Menu -->
+		<div class="bp-40939 whtd-collaps-sidemenu flex  max-w-320px col-bg-002 h-100v relative">
+			<div class="flex dir-column gap-10px scroll-X padd-rl-15px padd-10px jc-spabet ai-center">
+				<div class="from-breakpoint-mobile flex ai-center jc-center padd-t-45px">
+					<img src="/assets/icons/big-cloud-icon.svg" alt="">
+				</div>
+				<div class="flex dir-column ai-start gap-5px ds-buttons">
+					<!-- Dashboard -->
+					<button data-page-class="i" href-page-admin="home">
+						<img src="/assets/icons/dashboard/dashboard.svg" alt="">
+						<span>Home</span>
+					</button>
+					<!-- Purchase -->
+					<button data-page-class="i" href-page-admin="plans">
+						<img src="/assets/icons/dashboard/purchase.svg" alt="">
+						<span>Plans</span>
+					</button>
+					<!-- Users -->
+					<button data-page-class="i" href-page-admin="users">
+						<img src="/assets/icons/dashboard/users.svg" alt="">
+						<span>Users</span>
+					</button>
+					<!-- Servers -->
+					<button data-page-class="i" href-page-admin="servers">
+						<img src="/assets/icons/dashboard/servers.svg" alt="">
+						<span>Servers</span>
+					</button>
+					<!-- Methods -->
+					<button data-page-class="i" href-page-admin="methods">
+						<img src="/assets/icons/dashboard/api.svg" alt="">
+						<span>Methods</span>
+					</button>
+					<!-- Settings -->
+					<button data-page-class="i" href-page-admin="settings">
+						<img src="/assets/icons/dashboard/settings.svg" alt="">
+						<span>Settings</span>
+					</button>
+				</div>
+				<!-- User -->
+				<div class="min-h-65px flex padd-rl-20px padd-tb-10px jc-spabet ai-center radius-9px col-bg-010">
+					<div class="flex ai-center gap-10px w-fit">
+						<img src="/assets/images/profile/gatto.png" height="32px" class="radius-circle" alt="">
+						<div class="flex dir-column ai-start from-breakpoint-whtd">
+							<p class="small-10px">Administrator</p>
+							<p class="bolt-semi">Gatto</p>
+						</div>
+					</div>
+					<img class="from-breakpoint-whtd" src="/assets/icons/small-arrow.svg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<!-- Pages -->
+		<div class="relative bp-12960 flex dir-column padd-rl-15px ai-center max-h-100v! scroll-Y crop-X">
+
+			<!-- Notifys -->
+			<div class="notify-bar"></div>
+
+			<!-- Users -->
+			<section page data-page-admin="users" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<h1 class="padd-25px bolt">Users</h1>
+				<div class="flex bp-4728 dir-row padd-tb-15px padd-rl-25px ai-stretch gap-20px radius-12px col-bg-002">
+					<div class="flex dir-column gap-15px w-fit c42821">
+						<h4 class="bolt-semi">Last updates</h4>
+						<table class="flex max-w-100 scroll-X compact">
+							<tr class="table-header-painted">
+								<th>ID</th>
+								<th>Username</th>
+								<th>Plan</th>
+								<th>Status</th>
+								<th>Action</th>
+							</tr>
+							<tr><td></td></tr>	<!-- Free space -->
+							<tr>
+								<td>1</td>
+								<td>furkkinov</td>
+								<td>Premium</td>
+								<td class="col-008">Active</td>
+								<td>
+									<button class="small-gray">Ban</button>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>fadeinside</td>
+								<td>Free</td>
+								<td class="col-008">Active</td>
+								<td>
+									<button class="small-gray">Ban</button>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<line class="vertical col-bg-004"></line>
+					<div class="flex dir-column gap-15px w-fit c42821">
+						<h4 class="bolt-semi">User Infromation</h4>
+						<table class="flex max-w-100 scroll-X compact">
+							<tr>
+								<th>Target</th>
+								<th>Method</th>
+								<th>Time</th>
+								<th></th>
+							</tr>
+							<tr><td></td></tr>	<!-- Free space -->
+							<tr>
+								<td>192.0.0.1</td>
+								<td>NTP</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>192.0.0.1</td>
+								<td>NTP</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>192.0.0.1</td>
+								<td>NTP</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>192.0.0.1</td>
+								<td>NTP</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>192.0.0.1</td>
+								<td>NTP</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>192.0.0.1</td>
+								<td>NTP</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+							<tr>
+								<td>192.0.0.1</td>
+								<td>NTP</td>
+								<td>98</td>
+								<td>
+									<button class="small-gray">Stop</button>
+								</td>
+							</tr>
+						</table>
+						<div class="flex w-100 ai-center jc-spabet">
+							<button	on class="small-gray">Stop All</button>
+							<div class="w-fit flex gap-5px">
+								<button class="num-sel i">1</button>
+								<button class="num-sel">2</button>
+								<button class="num-sel">3</button>
+							</div>
+						</div>
+					</div>
+					<line class="vertical col-bg-004"></line>
+					<div class="flex dir-column gap-15px">
+						<h4 class="bolt-semi">Change Password</h4>
+						<form name="cpform" class="flex dir-column ai-start gap-10px">
+							<input type="password" name="n-password" placeholder="New password" class="w-100 input-dark">
+							<input type="password" name="r-password" placeholder="Repeat password" class="w-100 input-dark">
+							<input type="text" name="method" placeholder="Select method" class="w-100 input-dark">
+							<input type="text" name="type" placeholder="Active" class="w-100 input-dark">
+						</form>
+						<div class="flex dir-column padd-tb-15px padd-rl-10px ai-start gap-10px radius-12px col-bg-009">
+							<h4 class="bolt-semi">User Invoices</h4>
+							<div class="flex dir-column ai-start gap-5px">
+								<a href="#" class="card-hover flex min-h-40px padd-10px ai-center gap-10px radius-6px col-bg-010">
+									<chip style="--ccd: #A9F9C4"></chip>
+									<p class="small-10px">I have troubles with my brain</p>
+								</a>
+								<a href="#" class="card-hover flex min-h-40px padd-10px ai-center gap-10px radius-6px col-bg-010">
+									<chip style="--ccd: #F7F9A9"></chip>
+									<p class="small-10px">I have troubles with my L7 methods</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Settings -->
+			<section page data-page-admin="settings" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<h1 class="padd-25px bolt">Settings</h1>
+				<div class="bp-4728 dir-row flex ai-start gap-10px">
+					<!-- Форма -->
+					<div class="max-w-450px flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002">
+						<h4 class="bolt-semi">Change Password</h4>
+						<form name="cpform" class="flex dir-column ai-start gap-10px">
+							<input type="password" name="c-password" placeholder="Current password" class="w-100 input-dark">
+							<input type="password" name="n-password" placeholder="New password" class="w-100 input-dark">
+							<input type="password" name="r-password" placeholder="Repeat password" class="w-100 input-dark">
+							<button type="submit" class="w-100 big-green">Change Password</button>
+						</form>
+					</div>
+					<!-- Детали -->
+					<div class="flex dir-column padd-15px ai-start radius-12px col-bg-002">
+						<table class="flex max-w-100 scroll-X compact">
+							<tr class="table-header-painted">
+								<th>Plan</th>
+								<th>Price</th>
+								<th>Date</th>
+								<th>Status</th>
+							</tr>
+							<tr><td></td></tr>	<!-- Free space -->
+							<tr>
+								<td>Saturn</td>
+								<td>$120</td>
+								<td>17.02.2022</td>
+								<td>Unactive</td>
+							</tr>
+							<tr>
+								<td>Earth</td>
+								<td>$120</td>
+								<td>17.02.2022</td>
+								<td>Unactive</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<!-- Modal : Add method -->
+			<section page data-page-admin="add-methods" class="flex dir-column ai-center gap-10px max-w-980px padd-tb-40px">
+				<div class="flex dir-column max-w-420px ai-start gap-15px padd-20px col-bg-004 radius-12px bor-1px-col008">
+					<h1 class="bolt">Add Method</h1>
+					<div class="flex bp-4728 dir-row gap-10px">
+						<form id="addmethod" class="flex dir-column gap-10px">
+							<div class="flex dir-column gap-10px">
+								<h4 class="bolt-semi">Name</h4>
+								<input type="text" name="name" placeholder="Example" class="w-100 input-dark">
+							</div>
+							<div class="flex dir-column gap-10px">
+								<h4 class="bolt-semi">Type</h4>
+								<input type="text" name="type" placeholder="L4" class="w-100 input-dark">
+							</div>
+							<div class="flex dir-column gap-10px">
+								<h4 class="bolt-semi">Premium</h4>
+								<input type="text" name="premium" placeholder="Yes" class="w-100 input-dark">
+							</div>
+							<div class="flex dir-column gap-10px">
+								<h4 class="bolt-semi">API Access</h4>
+								<input type="text" name="access" placeholder="Yes" class="w-100 input-dark">
+							</div>
+							<button type="submit" class="w-100 big-green">Add Method</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<!-- Methods -->
+			<section page data-page-admin="methods" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<h1 class="padd-25px bolt">Methods</h1>
+				<div class="flex dir-column gap-10px">
+					<div class="flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002">
+						<h4 class="bolt-semi">Documentation</h4>
+						<table class="flex w-100 max-w-100 scroll-X compact">
+							<tr class="table-header-painted">
+								<th>Method</th>
+								<th>Hub Name</th>
+								<th>Layer</th>
+								<th>Category</th>
+								<th>Action</th>
+							</tr>
+							<tr><td></td></tr>	<!-- Free space -->
+							<tr>
+								<td>Method#1</td>
+								<td>HTTP-Storm</td>
+								<td>Layer 7</td>
+								<td class="col-008">Category 1</td>
+								<td>
+									<div class="flex gap-10px">
+										<button class="small-gray">
+											<img src="/assets/icons/pencil-small.svg" alt="">
+										</button>
+										<button class="small-gray">
+											<img src="/assets/icons/close-small.svg" alt="">
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Method#1</td>
+								<td>HTTP-Storm</td>
+								<td>Layer 7</td>
+								<td class="col-008">Category 1</td>
+								<td>
+									<div class="flex gap-10px">
+										<button class="small-gray">
+											<img src="/assets/icons/pencil-small.svg" alt="">
+										</button>
+										<button class="small-gray">
+											<img src="/assets/icons/close-small.svg" alt="">
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Method#1</td>
+								<td>HTTP-Storm</td>
+								<td>Layer 7</td>
+								<td class="col-008">Category 1</td>
+								<td>
+									<div class="flex gap-10px">
+										<button class="small-gray">
+											<img src="/assets/icons/pencil-small.svg" alt="">
+										</button>
+										<button class="small-gray">
+											<img src="/assets/icons/close-small.svg" alt="">
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Method#1</td>
+								<td>HTTP-Storm</td>
+								<td>Layer 7</td>
+								<td class="col-008">Category 1</td>
+								<td>
+									<div class="flex gap-10px">
+										<button class="small-gray">
+											<img src="/assets/icons/pencil-small.svg" alt="">
+										</button>
+										<button class="small-gray">
+											<img src="/assets/icons/close-small.svg" alt="">
+										</button>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+			</section>
+
+
+			<!-- Modal : Add Server -->
+			<section page data-page-admin="add-server" class="flex dir-column ai-center gap-10px max-w-980px padd-tb-40px">
+				<div class="flex dir-column max-w-420px ai-start gap-15px padd-20px col-bg-004 radius-12px bor-1px-col008">
+					<h1 class="bolt">Add Server</h1>
+					<div class="flex bp-4728 dir-row gap-10px">
+						<form id="addmethod" class="flex dir-column gap-10px">
+							<div class="flex dir-column gap-10px">
+								<h4 class="bolt-semi">API Key</h4>
+								<input type="text" name="apikey" placeholder="$2a$10$LLWutMvIziXMlLCEQzCvwuabe.5P6iXckg7AKzf2UfQBtm" class="w-100 input-dark">
+							</div>
+							<div class="flex dir-column gap-10px">
+								<h4 class="bolt-semi">Type</h4>
+								<input type="text" name="type" placeholder="L4" class="w-100 input-dark">
+							</div>
+							<div class="flex dir-column gap-10px">
+								<h4 class="bolt-semi">Premium</h4>
+								<input type="text" name="premium" placeholder="Yes" class="w-100 input-dark">
+							</div>
+							<div class="flex dir-column gap-10px">
+								<h4 class="bolt-semi">Methods</h4>
+								<input type="text" name="method" placeholder="HTTP-DDoS" class="w-100 input-dark">
+							</div>
+							<button type="submit" class="w-100 big-green">Add Server</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<!-- Servers -->
+			<section page data-page-admin="servers" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<h1 class="padd-25px bolt">API Manager</h1>
+				<div class="flex dir-column gap-10px">
+					<div class="flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002">
+						<h4 class="bolt-semi">Documentation</h4>
+						<table class="flex w-100 max-w-100 scroll-X compact">
+							<tr class="table-header-painted">
+								<th>Server name</th>
+								<th>Slots</th>
+								<th>Layer</th>
+								<th>Status</th>
+								<th>Action</th>
+							</tr>
+							<tr><td></td></tr>	<!-- Free space -->
+							<tr>
+								<td>Node#1</td>
+								<td>
+									<div class="flex col-bg-004 padd-5px w-fit radius-6px col-008">
+										<p>16/32</p>
+									</div>
+								</td>
+								<td>Layer 7</td>
+								<td class="col-008">Active</td>
+								<td>
+									<div class="flex gap-10px">
+										<button class="small-gray">
+											<img src="/assets/icons/pencil-small.svg" alt="">
+										</button>
+										<button class="small-gray">
+											<img src="/assets/icons/close-small.svg" alt="">
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Node#1</td>
+								<td>
+									<div class="flex col-bg-004 padd-5px w-fit radius-6px col-008">
+										<p>16/32</p>
+									</div>
+								</td>
+								<td>Layer 7</td>
+								<td class="col-008">Active</td>
+								<td>
+									<div class="flex gap-10px">
+										<button class="small-gray">
+											<img src="/assets/icons/pencil-small.svg" alt="">
+										</button>
+										<button class="small-gray">
+											<img src="/assets/icons/close-small.svg" alt="">
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Node#1</td>
+								<td>
+									<div class="flex col-bg-004 padd-5px w-fit radius-6px col-008">
+										<p>16/32</p>
+									</div>
+								</td>
+								<td>Layer 7</td>
+								<td class="col-008">Active</td>
+								<td>
+									<div class="flex gap-10px">
+										<button class="small-gray">
+											<img src="/assets/icons/pencil-small.svg" alt="">
+										</button>
+										<button class="small-gray">
+											<img src="/assets/icons/close-small.svg" alt="">
+										</button>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+			</section>
+
+			<!-- Plans -->
+			<section page data-page-admin="plans" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<h1 class="padd-25px bolt">Plans</h1>
+				<div class="flex dir-column ai-start gap-10px radius-12px col-bg-002">
+					<!-- Тарифы -->
+					<div class="flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002 scroll-X">
+						<div class="flex dir-row ai-stretch gap-30px">
+
+							<!-- Hyberblock -->
+							<form class="flex w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
+								<div class="w-200px flex dir-column gap-15px">
+									<div class="flex dir-column ai-center gap-10px">
+										<h4 contenteditable="true" class="medium">Basic</h4>
+										<h5 contenteditable="true" class="col-008">$100</h5>
+										<h5 contenteditable="true" class="col-003">Monthly</h5>
+									</div>
+									<div class="flex dir-column ai-start gap-30px">
+										<div class="flex dir-column ai-start col-005 gap-10px">
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">1 domain under protection</p>
+											</div>
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">Support response time up to 6 hours</p>
+											</div>
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+											</div>
+										</div>
+										<h5>Key advantages</h5>
+										<div class="flex dir-column ai-start col-005 gap-10px">
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">1 domain under protection</p>
+											</div>
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">Free SSL certificate</p>
+											</div>
+										</div>
+									</div>
+									<div class="flex dir-column ai-center gap-10px">
+										<button type="submit" class="green-onl">Save</button>
+									</div>
+								</div>
+								<line class="vertical col-bg-004"></line>
+								<div class="w-200px flex dir-column gap-20px">
+									<h4 class="medium">Category</h4>
+									<label class="custom-checkbox">
+										<input checked type="radio" name="type">
+										<span>Basic</span>
+									</label>
+									<label class="custom-checkbox">
+										<input type="radio" name="type">
+										<span>Premium</span>
+									</label>
+									<h4 class="medium">Api Access</h4>
+									<label class="custom-checkbox">
+										<input checked type="radio" value="true" name="access">
+										<span>True</span>
+									</label>
+									<label class="custom-checkbox">
+										<input type="radio" value="false" name="access">
+										<span>False</span>
+									</label>
+									<h4 class="medium">Length</h4>
+									<input type="date" class="w-100 input-dark" placeholder="Days">
+									<input type="number" class="w-100 input-dark" placeholder="Concurrents">
+									<input type="number" class="w-100 input-dark" placeholder="Time">
+								</div>
+							</form>
+							<!-- Hyberblock -->
+							<form class="flex w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
+								<div class="w-200px flex dir-column gap-15px">
+									<div class="flex dir-column ai-center gap-10px">
+										<h4 contenteditable="true" class="medium">Basic</h4>
+										<h5 contenteditable="true" class="col-008">$100</h5>
+										<h5 contenteditable="true" class="col-003">Monthly</h5>
+									</div>
+									<div class="flex dir-column ai-start gap-30px">
+										<div class="flex dir-column ai-start col-005 gap-10px">
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">1 domain under protection</p>
+											</div>
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">Support response time up to 6 hours</p>
+											</div>
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+											</div>
+										</div>
+										<h5>Key advantages</h5>
+										<div class="flex dir-column ai-start col-005 gap-10px">
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">1 domain under protection</p>
+											</div>
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">Free SSL certificate</p>
+											</div>
+										</div>
+									</div>
+									<div class="flex dir-column ai-center gap-10px">
+										<button type="submit" class="green-onl">Save</button>
+									</div>
+								</div>
+								<line class="vertical col-bg-004"></line>
+								<div class="w-200px flex dir-column gap-20px">
+									<h4 class="medium">Category</h4>
+									<label class="custom-checkbox">
+										<input checked type="radio" name="type">
+										<span>Basic</span>
+									</label>
+									<label class="custom-checkbox">
+										<input type="radio" name="type">
+										<span>Premium</span>
+									</label>
+									<h4 class="medium">Api Access</h4>
+									<label class="custom-checkbox">
+										<input checked type="radio" value="true" name="access">
+										<span>True</span>
+									</label>
+									<label class="custom-checkbox">
+										<input type="radio" value="false" name="access">
+										<span>False</span>
+									</label>
+									<h4 class="medium">Length</h4>
+									<input type="date" class="w-100 input-dark" placeholder="Days">
+									<input type="number" class="w-100 input-dark" placeholder="Concurrents">
+									<input type="number" class="w-100 input-dark" placeholder="Time">
+								</div>
+							</form>
+							<!-- Hyberblock -->
+							<form class="flex w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
+								<div class="w-200px flex dir-column gap-15px">
+									<div class="flex dir-column ai-center gap-10px">
+										<h4 contenteditable="true" class="medium">Basic</h4>
+										<h5 contenteditable="true" class="col-008">$100</h5>
+										<h5 contenteditable="true" class="col-003">Monthly</h5>
+									</div>
+									<div class="flex dir-column ai-start gap-30px">
+										<div class="flex dir-column ai-start col-005 gap-10px">
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">1 domain under protection</p>
+											</div>
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">Support response time up to 6 hours</p>
+											</div>
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+											</div>
+										</div>
+										<h5>Key advantages</h5>
+										<div class="flex dir-column ai-start col-005 gap-10px">
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">1 domain under protection</p>
+											</div>
+											<div class="flex dir-row ai-start gap-20px">
+												<img src="assets/icons/green-done-icon.svg">
+												<p class="small-10px">Free SSL certificate</p>
+											</div>
+										</div>
+									</div>
+									<div class="flex dir-column ai-center gap-10px">
+										<button type="submit" class="green-onl">Save</button>
+									</div>
+								</div>
+								<line class="vertical col-bg-004"></line>
+								<div class="w-200px flex dir-column gap-20px">
+									<h4 class="medium">Category</h4>
+									<label class="custom-checkbox">
+										<input checked type="radio" name="type">
+										<span>Basic</span>
+									</label>
+									<label class="custom-checkbox">
+										<input type="radio" name="type">
+										<span>Premium</span>
+									</label>
+									<h4 class="medium">Api Access</h4>
+									<label class="custom-checkbox">
+										<input checked type="radio" value="true" name="access">
+										<span>True</span>
+									</label>
+									<label class="custom-checkbox">
+										<input type="radio" value="false" name="access">
+										<span>False</span>
+									</label>
+									<h4 class="medium">Length</h4>
+									<input type="date" class="w-100 input-dark" placeholder="Days">
+									<input type="number" class="w-100 input-dark" placeholder="Concurrents">
+									<input type="number" class="w-100 input-dark" placeholder="Time">
+								</div>
+							</form>
+							
+						</div>
+					</div>
+					<div class="flex ai-center jc-center padd-b-20px"><button class="big-green">Add a new plan</button></div>
+				</div>
+			</section>
+
+			<!-- Home -->
+			<section page data-page-admin="home" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
+				<!-- Big card -->
+				<div class="flex jc-spabet ai-start radius-16px bor-1px-col005 col-bg-004 wrap max-w-100 crop">
+					<div class="flex padd-25px dir-column ai-start gap-20px max-w-320px">
+						<h1 class="bolt">Dashboard</h1>
+						<p>Good evening,<br><span class="h2 bolt">Gatto</span></p>
+					</div>
+					<img src="/assets/images/usa-rokets.png" height="193px" alt="">
+				</div>
+
+				<!-- Info cards -->
+				<div class="flex bp-4728 dir-row ai-start gap-10px">
+					<!-- Detail panel -->
+					<div class="flex dir-column ai-start gap-10px">
+						<!-- Last updates -->
+						<div class="flex dir-column padd-tb-15px padd-rl-25px ai-start gap-20px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Last updates</h4>
+							<div class="flex dir-column ai-start">
+								<!-- 2023-05-15 -->
+								<div class="latest-update-item" style="--ccd: #A9F9C4">
+									<div class="content">
+										<div contenteditable="true" class="title">
+											<p>[Date: 2023-05-15]</p>
+											<chip></chip>
+											<p>Improved DDoS mitigation</p>
+										</div>
+										<p contenteditable="true">Upgraded algorithms and infrastructure for enhanced protection against DDoS attacks, ensuring greater stability and availability of networks and servers.</p>
+									</div>
+								</div>
+								<!-- 2023-05-18 -->
+								<div class="latest-update-item" style="--ccd: #F7F9A9">
+									<div class="content">
+										<div contenteditable="true" class="title">
+											<p>[Date: 2023-05-18]</p>
+											<chip></chip>
+											<p>New stress testing methods</p>
+										</div>
+										<p contenteditable="true">Introduced additional stress testing methods to simulate a wider range of scenarios, enabling more comprehensive assessments of system resilience and performance.</p>
+									</div>
+								</div>
+								<!-- 2023-05-23 -->
+								<div class="latest-update-item" style="--ccd: #C3A9F9">
+									<div class="content">
+										<div contenteditable="true" class="title">
+											<p>[Date: 2023-05-23]</p>
+											<chip></chip>
+											<p>Performance optimizations</p>
+										</div>
+										<p contenteditable="true">Fine-tuned infrastructure to optimize stress testing performance, resulting in faster test initiation and more responsive results for quicker and more accurate evaluations.</p>
+									</div>
+								</div>
+							</div>
+							<div class="flex ai-center jc-center">
+								<button class="green-onl">Add update note</button>
+							</div>
+						</div>
+						<!-- Current server load -->
+						<div class="flex dir-column padd-tb-15px padd-rl-25px ai-start gap-20px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Current server load</h4>
+							<div class="flex gap-5px dir-column ai-start">
+								<!-- #1 -->
+								<div class="flex dir-column ai-start padd-10px gap-10px col-bg-004 radius-6px">
+									<div class="c43419">
+										<p class="col-005">Server #1</p>
+										<span>23.1</span>
+									</div>
+									<div class="c1337 w-100"></div>
+								</div>
+								<!-- #2 -->
+								<div class="flex dir-column ai-start padd-10px gap-10px col-bg-004 radius-6px --red">
+									<div class="c43419">
+										<p class="col-005">Server #2</p>
+										<span>72.6</span>
+									</div>
+									<div class="c1337 w-100"></div>
+								</div>
+								<!-- #3 -->
+								<div class="flex dir-column ai-start padd-10px gap-10px col-bg-004 radius-6px">
+									<div class="c43419">
+										<p class="col-005">Server #3</p>
+										<span>23.1</span>
+									</div>
+									<div class="c1337 w-100"></div>
+								</div>
+								<!-- #4 -->
+								<div class="flex dir-column ai-start padd-10px gap-10px col-bg-004 radius-6px --red">
+									<div class="c43419">
+										<p class="col-005">Server #4</p>
+										<span>72.6</span>
+									</div>
+									<div class="c1337 w-100"></div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- Right panel -->
+					<div class="flex dir-column max-w-280px ai-start gap-10px">
+						<!-- Notification center -->
+						<div class="flex dir-column padd-tb-15px padd-rl-10px ai-start gap-10px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Notification center</h4>
+							<div class="flex dir-column ai-start gap-5px">
+								<a href="#" class="card-hover flex min-h-40px padd-10px ai-center gap-10px radius-6px col-bg-010">
+									<chip style="--ccd: #A9F9C4"></chip>
+									<p class="small-10px">Improved DDoS mitigation</p>
+								</a>
+								<a href="#" class="card-hover flex min-h-40px padd-10px ai-center gap-10px radius-6px col-bg-010">
+									<chip style="--ccd: #F7F9A9"></chip>
+									<p class="small-10px">New stress testing methods</p>
+								</a>
+							</div>
+						</div>
+						<!-- Total servers -->
+						<div class="flex dir-column padd-tb-15px padd-rl-10px ai-start gap-10px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Total servers</h4>
+							<div class="flex padd-15px ai-center jc-center radius-9px col-bg-009">
+								<h1 class="bolt col-008">7</h1>
+							</div>
+						</div>
+						<!-- Total tests -->
+						<div class="flex dir-column padd-tb-15px padd-rl-10px ai-start gap-10px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Total tests</h4>
+							<div class="flex padd-15px ai-center jc-center radius-9px col-bg-009">
+								<h1 class="bolt col-008">24.944</h1>
+							</div>
+						</div>
+						<!-- Current plan -->
+						<div class="flex dir-column padd-tb-15px padd-rl-10px ai-start gap-10px radius-12px col-bg-002">
+							<h4 class="bolt-semi">Current plan</h4>
+							<div class="flex padd-15px ai-center jc-center radius-9px col-bg-009">
+								<h1 class="bolt col-008">Free</h1>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+			</section>
+
+		</div>
+	</div>
+</body>
+
+</html>

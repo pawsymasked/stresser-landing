@@ -22,7 +22,13 @@
 		&.dir-row {
 			flex-direction: column;
 		}
-		.max-w-280px, .max-w-450px {
+		.c42821 {
+			&.w-fit {
+				width: 100%;
+			}
+		}
+		
+		.max-w-280px, .max-w-450px, .max-w-320px {
 			max-width: unset;
 		}
 	}
