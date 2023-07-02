@@ -31,3 +31,14 @@ img {
 	pointer-events: none;
 	user-select: none;
 }
+
+::-webkit-scrollbar {
+	background: transparent;
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	background: var(--color_primany_004);
+}

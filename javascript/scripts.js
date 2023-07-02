@@ -5,16 +5,63 @@ document.addEventListener("DOMContentLoaded", function () {
 	updateMouseUpMenuBehavior();
 	updateGiftAnimation();
 	updateHeaderBehavior();
+	updateScrollSnap();
 
 	new URLMenuUpdater({
-		ds: "dashboard",
-		admin: "home",
+		ds: "dashboard"
+	});
+	new URLMenuUpdater({
+		admin: "home"
 	});
 
-	// spawnToast("Как использовать Тосты", "Смотрите пример в <b>scripts.js -> spawnToast(...)</b>", "", 10000);
+	spawnToast("Как использовать Тосты", "Смотрите пример в <b>scripts.js -> spawnToast(...)</b>", "", 10000);
 	// spawnToast("Success", "Attack has been sent", "success");
 	// spawnToast("Error", "Error has occurred", "error");
 });
+
+function updateScrollSnap() {
+	// Получаем контейнер и кнопки
+	const $containers = $('#scrollContainer');
+	$containers.each(function() {
+		const $container = $(this).find(".scroll-X");
+		const $nextButton = $(this).find('#nextButton');
+		const $prevButton = $(this).find('#prevButton');
+
+		// Создаем экземпляр Intersection Observer
+		var observer = new IntersectionObserver(function(entries, observer) {
+			entries.forEach(function(entry) {
+			if (entry.isIntersecting) {
+				// Код выполняется только если объект видим
+				enableScrollButtons();
+				observer.unobserve(entry.target);
+			}
+			});
+		});
+		
+		// Наблюдаем за контейнером
+		observer.observe($container[0]);
+		
+		function enableScrollButtons() {
+			// Получаем ширину элемента внутри контейнера
+			var itemWidth = $container.children().first().outerWidth();
+			console.log(itemWidth)
+			// Обработчик клика на кнопку "Next"
+			$nextButton.on('click', function() {
+				$container.animate({
+					scrollLeft: '+=' + itemWidth
+				}, 'fast');
+			});
+		
+			// Обработчик клика на кнопку "Prev"
+			$prevButton.on('click', function() {
+				$container.animate({
+					scrollLeft: '-=' + itemWidth
+				}, 'fast');
+			});
+		}
+		
+	})
+}
 
 
 function spawnToast(title, message, type, timeout = 5000) {
@@ -161,11 +208,12 @@ function updateHeaderBehavior() {
 			const headerKey = "header";
 			const setClass = "c42190";
 			const element = document.querySelector(headerKey);
-
-			if (document.body.scrollTop > deadline || document.documentElement.scrollTop > deadline) {
-				element.classList.add(setClass);
-			} else {
-				element.classList.remove(setClass);
+			if (element) {
+				if (document.body.scrollTop > deadline || document.documentElement.scrollTop > deadline) {
+					element.classList.add(setClass);
+				} else {
+					element.classList.remove(setClass);
+				}
 			}
 		}
 		window.addEventListener("load", updateVisibility);
@@ -177,17 +225,18 @@ function updateHeaderBehavior() {
 		var prevScrollpos = window.scrollY;
 		const headerKey = "header";
 		const element = document.querySelector(headerKey);
+		if (element) {
+			window.addEventListener("scroll", function () {
+				var currentScrollPos = window.scrollY;
 
-		window.addEventListener("scroll", function () {
-			var currentScrollPos = window.scrollY;
+				if (prevScrollpos > currentScrollPos)
+					element.style.transform = "translateY(0)";
+				else
+					element.style.transform = "translateY(-100%)";
 
-			if (prevScrollpos > currentScrollPos)
-				element.style.transform = "translateY(0)";
-			else
-				element.style.transform = "translateY(-100%)";
-
-			prevScrollpos = currentScrollPos;
-		});
+				prevScrollpos = currentScrollPos;
+			});
+		}
 	}
 }
 

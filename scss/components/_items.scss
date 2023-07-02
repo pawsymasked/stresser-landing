@@ -361,3 +361,13 @@ table {
 		border-bottom: 1px solid var(--color_primany_017);
 	}
 }
+
+.ss-type-x-mandatory {
+	scroll-snap-type: x mandatory;
+	scroll-snap-stop: always;
+
+	& > * {
+		scroll-snap-align: center;
+		// scroll-margin-left: 20px;
+	}
+}

@@ -202,6 +202,17 @@ img {
 	user-select: none;
 }
 
+::-webkit-scrollbar {
+	background: transparent;
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	background: var(--color_primany_004);
+}
+
 :root {
 	color-scheme: dark;
 	--color_primany_000: #8F8F8F;
@@ -1502,6 +1513,14 @@ a.card-hover:hover {
 	top: 24px;
 }
 
+.top-45 {
+	top: 45%;
+}
+
+.top-50 {
+	top: 50%;
+}
+
 .top-60px {
 	top: 60px;
 }
@@ -1534,6 +1553,10 @@ a.card-hover:hover {
 	left: 14px;
 }
 
+.left--15px {
+	left: -15px;
+}
+
 .left-35px {
 	left: 35px;
 }
@@ -1548,6 +1571,10 @@ a.card-hover:hover {
 
 .right--11px {
 	right: -11px;
+}
+
+.right--15px {
+	right: -15px;
 }
 
 .bottom-10px {
@@ -2379,6 +2406,11 @@ a.card-hover:hover {
 	top: -34px;
 }
 
+.c48954 {
+	right: -15px;
+	top: 45%;
+}
+
 .--red .c43419 {
 	color: #F9A9A9;
 }
@@ -2727,4 +2759,12 @@ table th, table td {
 	text-align: left;
 	padding: 10px;
 	border-bottom: 1px solid var(--color_primany_017);
+}
+
+.ss-type-x-mandatory {
+	scroll-snap-type: x mandatory;
+	scroll-snap-stop: always;
+}
+.ss-type-x-mandatory > * {
+	scroll-snap-align: center;
 }

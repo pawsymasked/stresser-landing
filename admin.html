@@ -472,208 +472,468 @@
 			<!-- Plans -->
 			<section page data-page-admin="plans" class="flex dir-column gap-10px max-w-980px padd-tb-40px">
 				<h1 class="padd-25px bolt">Plans</h1>
-				<div class="flex dir-column ai-start gap-10px radius-12px col-bg-002">
+				<div id="scrollContainer" class="flex dir-column ai-start relative gap-10px radius-12px col-bg-002">
+					<button id="prevButton" class="num-sel absolute top-45 left--15px bor-1px-col008 z-100"><img src="/assets/icons/arrow2-l_button.svg" alt=""></button>
+					<button id="nextButton" class="num-sel absolute top-45 right--15px bor-1px-col008 z-100"><img src="/assets/icons/arrow2_button.svg" alt=""></button>
 					<!-- Тарифы -->
-					<div class="flex dir-column padd-25px ai-start gap-20px radius-12px col-bg-002 scroll-X">
-						<div class="flex dir-row ai-stretch gap-30px">
-
-							<!-- Hyberblock -->
-							<form class="flex w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
-								<div class="w-200px flex dir-column gap-15px">
-									<div class="flex dir-column ai-center gap-10px">
-										<h4 contenteditable="true" class="medium">Basic</h4>
-										<h5 contenteditable="true" class="col-008">$100</h5>
-										<h5 contenteditable="true" class="col-003">Monthly</h5>
-									</div>
-									<div class="flex dir-column ai-start gap-30px">
-										<div class="flex dir-column ai-start col-005 gap-10px">
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">1 domain under protection</p>
-											</div>
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">Support response time up to 6 hours</p>
-											</div>
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">Block/Allow lists up to 3 rules each</p>
-											</div>
+					<div class="flex dir-row padd-25px ai-start gap-20px radius-12px col-bg-002 ss-type-x-mandatory scroll-X">
+						<!-- <div class="flex dir-row ai-stretch gap-30px"> -->
+						<!-- Hyberblock -->
+						<form class="flex min-w-fit w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
+							<div class="w-200px flex dir-column gap-15px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 contenteditable="true" class="medium">Basic</h4>
+									<h5 contenteditable="true" class="col-008">$100</h5>
+									<h5 contenteditable="true" class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
 										</div>
-										<h5>Key advantages</h5>
-										<div class="flex dir-column ai-start col-005 gap-10px">
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">1 domain under protection</p>
-											</div>
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">Free SSL certificate</p>
-											</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
 										</div>
 									</div>
-									<div class="flex dir-column ai-center gap-10px">
-										<button type="submit" class="green-onl">Save</button>
-									</div>
-								</div>
-								<line class="vertical col-bg-004"></line>
-								<div class="w-200px flex dir-column gap-20px">
-									<h4 class="medium">Category</h4>
-									<label class="custom-checkbox">
-										<input checked type="radio" name="type">
-										<span>Basic</span>
-									</label>
-									<label class="custom-checkbox">
-										<input type="radio" name="type">
-										<span>Premium</span>
-									</label>
-									<h4 class="medium">Api Access</h4>
-									<label class="custom-checkbox">
-										<input checked type="radio" value="true" name="access">
-										<span>True</span>
-									</label>
-									<label class="custom-checkbox">
-										<input type="radio" value="false" name="access">
-										<span>False</span>
-									</label>
-									<h4 class="medium">Length</h4>
-									<input type="date" class="w-100 input-dark" placeholder="Days">
-									<input type="number" class="w-100 input-dark" placeholder="Concurrents">
-									<input type="number" class="w-100 input-dark" placeholder="Time">
-								</div>
-							</form>
-							<!-- Hyberblock -->
-							<form class="flex w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
-								<div class="w-200px flex dir-column gap-15px">
-									<div class="flex dir-column ai-center gap-10px">
-										<h4 contenteditable="true" class="medium">Basic</h4>
-										<h5 contenteditable="true" class="col-008">$100</h5>
-										<h5 contenteditable="true" class="col-003">Monthly</h5>
-									</div>
-									<div class="flex dir-column ai-start gap-30px">
-										<div class="flex dir-column ai-start col-005 gap-10px">
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">1 domain under protection</p>
-											</div>
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">Support response time up to 6 hours</p>
-											</div>
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">Block/Allow lists up to 3 rules each</p>
-											</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
 										</div>
-										<h5>Key advantages</h5>
-										<div class="flex dir-column ai-start col-005 gap-10px">
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">1 domain under protection</p>
-											</div>
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">Free SSL certificate</p>
-											</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
 										</div>
 									</div>
-									<div class="flex dir-column ai-center gap-10px">
-										<button type="submit" class="green-onl">Save</button>
-									</div>
 								</div>
-								<line class="vertical col-bg-004"></line>
-								<div class="w-200px flex dir-column gap-20px">
-									<h4 class="medium">Category</h4>
-									<label class="custom-checkbox">
-										<input checked type="radio" name="type">
-										<span>Basic</span>
-									</label>
-									<label class="custom-checkbox">
-										<input type="radio" name="type">
-										<span>Premium</span>
-									</label>
-									<h4 class="medium">Api Access</h4>
-									<label class="custom-checkbox">
-										<input checked type="radio" value="true" name="access">
-										<span>True</span>
-									</label>
-									<label class="custom-checkbox">
-										<input type="radio" value="false" name="access">
-										<span>False</span>
-									</label>
-									<h4 class="medium">Length</h4>
-									<input type="date" class="w-100 input-dark" placeholder="Days">
-									<input type="number" class="w-100 input-dark" placeholder="Concurrents">
-									<input type="number" class="w-100 input-dark" placeholder="Time">
+								<div class="flex dir-column ai-center gap-10px">
+									<button type="submit" class="green-onl">Save</button>
 								</div>
-							</form>
-							<!-- Hyberblock -->
-							<form class="flex w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
-								<div class="w-200px flex dir-column gap-15px">
-									<div class="flex dir-column ai-center gap-10px">
-										<h4 contenteditable="true" class="medium">Basic</h4>
-										<h5 contenteditable="true" class="col-008">$100</h5>
-										<h5 contenteditable="true" class="col-003">Monthly</h5>
-									</div>
-									<div class="flex dir-column ai-start gap-30px">
-										<div class="flex dir-column ai-start col-005 gap-10px">
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">1 domain under protection</p>
-											</div>
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">Support response time up to 6 hours</p>
-											</div>
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">Block/Allow lists up to 3 rules each</p>
-											</div>
+							</div>
+							<line class="vertical col-bg-004"></line>
+							<div class="w-200px flex dir-column gap-20px">
+								<h4 class="medium">Category</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" name="type">
+									<span>Basic</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" name="type">
+									<span>Premium</span>
+								</label>
+								<h4 class="medium">Api Access</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" value="true" name="access">
+									<span>True</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" value="false" name="access">
+									<span>False</span>
+								</label>
+								<h4 class="medium">Length</h4>
+								<input type="date" class="w-100 input-dark" placeholder="Days">
+								<input type="number" class="w-100 input-dark" placeholder="Concurrents">
+								<input type="number" class="w-100 input-dark" placeholder="Time">
+							</div>
+						</form>
+						<!-- Hyberblock -->
+						<form class="flex min-w-fit w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
+							<div class="w-200px flex dir-column gap-15px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 contenteditable="true" class="medium">Basic</h4>
+									<h5 contenteditable="true" class="col-008">$100</h5>
+									<h5 contenteditable="true" class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
 										</div>
-										<h5>Key advantages</h5>
-										<div class="flex dir-column ai-start col-005 gap-10px">
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">1 domain under protection</p>
-											</div>
-											<div class="flex dir-row ai-start gap-20px">
-												<img src="assets/icons/green-done-icon.svg">
-												<p class="small-10px">Free SSL certificate</p>
-											</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
 										</div>
 									</div>
-									<div class="flex dir-column ai-center gap-10px">
-										<button type="submit" class="green-onl">Save</button>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
 									</div>
 								</div>
-								<line class="vertical col-bg-004"></line>
-								<div class="w-200px flex dir-column gap-20px">
-									<h4 class="medium">Category</h4>
-									<label class="custom-checkbox">
-										<input checked type="radio" name="type">
-										<span>Basic</span>
-									</label>
-									<label class="custom-checkbox">
-										<input type="radio" name="type">
-										<span>Premium</span>
-									</label>
-									<h4 class="medium">Api Access</h4>
-									<label class="custom-checkbox">
-										<input checked type="radio" value="true" name="access">
-										<span>True</span>
-									</label>
-									<label class="custom-checkbox">
-										<input type="radio" value="false" name="access">
-										<span>False</span>
-									</label>
-									<h4 class="medium">Length</h4>
-									<input type="date" class="w-100 input-dark" placeholder="Days">
-									<input type="number" class="w-100 input-dark" placeholder="Concurrents">
-									<input type="number" class="w-100 input-dark" placeholder="Time">
+								<div class="flex dir-column ai-center gap-10px">
+									<button type="submit" class="green-onl">Save</button>
 								</div>
-							</form>
-							
-						</div>
+							</div>
+							<line class="vertical col-bg-004"></line>
+							<div class="w-200px flex dir-column gap-20px">
+								<h4 class="medium">Category</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" name="type">
+									<span>Basic</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" name="type">
+									<span>Premium</span>
+								</label>
+								<h4 class="medium">Api Access</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" value="true" name="access">
+									<span>True</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" value="false" name="access">
+									<span>False</span>
+								</label>
+								<h4 class="medium">Length</h4>
+								<input type="date" class="w-100 input-dark" placeholder="Days">
+								<input type="number" class="w-100 input-dark" placeholder="Concurrents">
+								<input type="number" class="w-100 input-dark" placeholder="Time">
+							</div>
+						</form>
+						<!-- Hyberblock -->
+						<form class="flex min-w-fit w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
+							<div class="w-200px flex dir-column gap-15px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 contenteditable="true" class="medium">Basic</h4>
+									<h5 contenteditable="true" class="col-008">$100</h5>
+									<h5 contenteditable="true" class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+										</div>
+									</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex dir-column ai-center gap-10px">
+									<button type="submit" class="green-onl">Save</button>
+								</div>
+							</div>
+							<line class="vertical col-bg-004"></line>
+							<div class="w-200px flex dir-column gap-20px">
+								<h4 class="medium">Category</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" name="type">
+									<span>Basic</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" name="type">
+									<span>Premium</span>
+								</label>
+								<h4 class="medium">Api Access</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" value="true" name="access">
+									<span>True</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" value="false" name="access">
+									<span>False</span>
+								</label>
+								<h4 class="medium">Length</h4>
+								<input type="date" class="w-100 input-dark" placeholder="Days">
+								<input type="number" class="w-100 input-dark" placeholder="Concurrents">
+								<input type="number" class="w-100 input-dark" placeholder="Time">
+							</div>
+						</form>
+						<!-- Hyberblock -->
+						<form class="flex min-w-fit w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
+							<div class="w-200px flex dir-column gap-15px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 contenteditable="true" class="medium">Basic</h4>
+									<h5 contenteditable="true" class="col-008">$100</h5>
+									<h5 contenteditable="true" class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+										</div>
+									</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex dir-column ai-center gap-10px">
+									<button type="submit" class="green-onl">Save</button>
+								</div>
+							</div>
+							<line class="vertical col-bg-004"></line>
+							<div class="w-200px flex dir-column gap-20px">
+								<h4 class="medium">Category</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" name="type">
+									<span>Basic</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" name="type">
+									<span>Premium</span>
+								</label>
+								<h4 class="medium">Api Access</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" value="true" name="access">
+									<span>True</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" value="false" name="access">
+									<span>False</span>
+								</label>
+								<h4 class="medium">Length</h4>
+								<input type="date" class="w-100 input-dark" placeholder="Days">
+								<input type="number" class="w-100 input-dark" placeholder="Concurrents">
+								<input type="number" class="w-100 input-dark" placeholder="Time">
+							</div>
+						</form>
+						<!-- Hyberblock -->
+						<form class="flex min-w-fit w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
+							<div class="w-200px flex dir-column gap-15px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 contenteditable="true" class="medium">Basic</h4>
+									<h5 contenteditable="true" class="col-008">$100</h5>
+									<h5 contenteditable="true" class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+										</div>
+									</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex dir-column ai-center gap-10px">
+									<button type="submit" class="green-onl">Save</button>
+								</div>
+							</div>
+							<line class="vertical col-bg-004"></line>
+							<div class="w-200px flex dir-column gap-20px">
+								<h4 class="medium">Category</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" name="type">
+									<span>Basic</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" name="type">
+									<span>Premium</span>
+								</label>
+								<h4 class="medium">Api Access</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" value="true" name="access">
+									<span>True</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" value="false" name="access">
+									<span>False</span>
+								</label>
+								<h4 class="medium">Length</h4>
+								<input type="date" class="w-100 input-dark" placeholder="Days">
+								<input type="number" class="w-100 input-dark" placeholder="Concurrents">
+								<input type="number" class="w-100 input-dark" placeholder="Time">
+							</div>
+						</form>
+						<!-- Hyberblock -->
+						<form class="flex min-w-fit w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
+							<div class="w-200px flex dir-column gap-15px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 contenteditable="true" class="medium">Basic</h4>
+									<h5 contenteditable="true" class="col-008">$100</h5>
+									<h5 contenteditable="true" class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+										</div>
+									</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex dir-column ai-center gap-10px">
+									<button type="submit" class="green-onl">Save</button>
+								</div>
+							</div>
+							<line class="vertical col-bg-004"></line>
+							<div class="w-200px flex dir-column gap-20px">
+								<h4 class="medium">Category</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" name="type">
+									<span>Basic</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" name="type">
+									<span>Premium</span>
+								</label>
+								<h4 class="medium">Api Access</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" value="true" name="access">
+									<span>True</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" value="false" name="access">
+									<span>False</span>
+								</label>
+								<h4 class="medium">Length</h4>
+								<input type="date" class="w-100 input-dark" placeholder="Days">
+								<input type="number" class="w-100 input-dark" placeholder="Concurrents">
+								<input type="number" class="w-100 input-dark" placeholder="Time">
+							</div>
+						</form>
+						<!-- Hyberblock -->
+						<form class="flex min-w-fit w-fit padd-rl-25px gap-35px padd-tb-40px radius-15px bor-1px-col008 col-bg-002">
+							<div class="w-200px flex dir-column gap-15px">
+								<div class="flex dir-column ai-center gap-10px">
+									<h4 contenteditable="true" class="medium">Basic</h4>
+									<h5 contenteditable="true" class="col-008">$100</h5>
+									<h5 contenteditable="true" class="col-003">Monthly</h5>
+								</div>
+								<div class="flex dir-column ai-start gap-30px">
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Support response time up to 6 hours</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Block/Allow lists up to 3 rules each</p>
+										</div>
+									</div>
+									<h5>Key advantages</h5>
+									<div class="flex dir-column ai-start col-005 gap-10px">
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">1 domain under protection</p>
+										</div>
+										<div class="flex dir-row ai-start gap-20px">
+											<img src="assets/icons/green-done-icon.svg">
+											<p class="small-10px">Free SSL certificate</p>
+										</div>
+									</div>
+								</div>
+								<div class="flex dir-column ai-center gap-10px">
+									<button type="submit" class="green-onl">Save</button>
+								</div>
+							</div>
+							<line class="vertical col-bg-004"></line>
+							<div class="w-200px flex dir-column gap-20px">
+								<h4 class="medium">Category</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" name="type">
+									<span>Basic</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" name="type">
+									<span>Premium</span>
+								</label>
+								<h4 class="medium">Api Access</h4>
+								<label class="custom-checkbox">
+									<input checked type="radio" value="true" name="access">
+									<span>True</span>
+								</label>
+								<label class="custom-checkbox">
+									<input type="radio" value="false" name="access">
+									<span>False</span>
+								</label>
+								<h4 class="medium">Length</h4>
+								<input type="date" class="w-100 input-dark" placeholder="Days">
+								<input type="number" class="w-100 input-dark" placeholder="Concurrents">
+								<input type="number" class="w-100 input-dark" placeholder="Time">
+							</div>
+						</form>
+						<!-- </div> -->
 					</div>
 					<div class="flex ai-center jc-center padd-b-20px"><button class="big-green">Add a new plan</button></div>
 				</div>
